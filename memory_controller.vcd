@@ -1,0 +1,452 @@
+$date
+	Tue Oct 20 15:28:34 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_RAM_Controller $end
+$var wire 1 ! ready $end
+$var wire 32 " rdata [31:0] $end
+$var wire 1 # error $end
+$var reg 6 $ addr [5:0] $end
+$var reg 1 % clk $end
+$var reg 1 & req $end
+$var reg 1 ' rst_n $end
+$var reg 32 ( wdata [31:0] $end
+$var reg 1 ) we $end
+$var integer 32 * errors [31:0] $end
+$scope module dut $end
+$var wire 6 + addr [5:0] $end
+$var wire 1 % clk $end
+$var wire 1 & req $end
+$var wire 1 ' rst_n $end
+$var wire 32 , wdata [31:0] $end
+$var wire 1 ) we $end
+$var wire 2 - decoded_bank [1:0] $end
+$var wire 2 . decoded_addr [1:0] $end
+$var reg 4 / bank_en [3:0] $end
+$var reg 4 0 bank_we [3:0] $end
+$var reg 1 # error $end
+$var reg 32 1 rdata [31:0] $end
+$var reg 1 ! ready $end
+$var reg 2 2 selected_addr [1:0] $end
+$var reg 2 3 selected_bank [1:0] $end
+$var reg 1 4 state $end
+$scope begin BANKS[0] $end
+$scope module bank_inst $end
+$var wire 2 5 addr [1:0] $end
+$var wire 1 % clk $end
+$var wire 1 6 en $end
+$var wire 32 7 wdata [31:0] $end
+$var wire 1 8 we $end
+$var reg 32 9 rdata [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin BANKS[1] $end
+$scope module bank_inst $end
+$var wire 2 : addr [1:0] $end
+$var wire 1 % clk $end
+$var wire 1 ; en $end
+$var wire 32 < wdata [31:0] $end
+$var wire 1 = we $end
+$var reg 32 > rdata [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin BANKS[2] $end
+$scope module bank_inst $end
+$var wire 2 ? addr [1:0] $end
+$var wire 1 % clk $end
+$var wire 1 @ en $end
+$var wire 32 A wdata [31:0] $end
+$var wire 1 B we $end
+$var reg 32 C rdata [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin BANKS[3] $end
+$scope module bank_inst $end
+$var wire 2 D addr [1:0] $end
+$var wire 1 % clk $end
+$var wire 1 E en $end
+$var wire 32 F wdata [31:0] $end
+$var wire 1 G we $end
+$var reg 32 H rdata [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope task read_word $end
+$var reg 6 I address [5:0] $end
+$var reg 32 J expected [31:0] $end
+$var integer 32 K timeout [31:0] $end
+$upscope $end
+$scope task write_word $end
+$var reg 6 L address [5:0] $end
+$var reg 32 M data [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx M
+bx L
+bx K
+bx J
+bx I
+bx H
+xG
+b0 F
+xE
+b0 D
+bx C
+xB
+b0 A
+x@
+b0 ?
+bx >
+x=
+b0 <
+x;
+b0 :
+bx 9
+x8
+b0 7
+x6
+b0 5
+x4
+bx 3
+bx 2
+bx 1
+bx 0
+bx /
+b0 .
+b0 -
+b0 ,
+b0 +
+b0 *
+0)
+b0 (
+0'
+0&
+0%
+b0 $
+x#
+bx "
+x!
+$end
+#5000
+08
+0=
+0B
+0G
+06
+0;
+0@
+0E
+b0 0
+b0 /
+b0 2
+b0 3
+b0 "
+b0 1
+0#
+0!
+04
+1%
+#10000
+0%
+#15000
+1%
+#20000
+0%
+#25000
+1%
+#30000
+b10010001101000101011001111000 M
+b0 L
+1'
+0%
+#35000
+1%
+#40000
+18
+16
+b1 0
+b1 /
+b10010001101000101011001111000 (
+b10010001101000101011001111000 ,
+b10010001101000101011001111000 7
+b10010001101000101011001111000 <
+b10010001101000101011001111000 A
+b10010001101000101011001111000 F
+1)
+1&
+0%
+#45000
+1!
+1%
+#50000
+08
+06
+b0 0
+b0 /
+0)
+0&
+0%
+#55000
+0!
+1%
+#60000
+0%
+#65000
+1%
+#70000
+b10010001101000101011001111000 J
+b0 I
+0%
+#75000
+1%
+#80000
+16
+b1 /
+1&
+0%
+#85000
+06
+b0 /
+b10010001101000101011001111000 9
+14
+1%
+#90000
+b0 K
+0&
+0%
+#95000
+04
+1!
+b10010001101000101011001111000 "
+b10010001101000101011001111000 1
+1%
+#100000
+b10100101101001011010010110100101 M
+b100 L
+b1 K
+0%
+#105000
+0!
+1%
+#110000
+1=
+1;
+08
+06
+b1 -
+b10 0
+b10 /
+b10100101101001011010010110100101 (
+b10100101101001011010010110100101 ,
+b10100101101001011010010110100101 7
+b10100101101001011010010110100101 <
+b10100101101001011010010110100101 A
+b10100101101001011010010110100101 F
+b100 $
+b100 +
+1)
+1&
+0%
+#115000
+1!
+b1 3
+1%
+#120000
+0=
+0;
+b0 0
+b0 /
+0)
+0&
+0%
+#125000
+0!
+1%
+#130000
+0%
+#135000
+1%
+#140000
+b10100101101001011010010110100101 J
+b100 I
+0%
+#145000
+1%
+#150000
+1;
+b10 /
+1&
+0%
+#155000
+0;
+b0 /
+b10100101101001011010010110100101 >
+14
+1%
+#160000
+b0 K
+0&
+0%
+#165000
+04
+1!
+b10100101101001011010010110100101 "
+b10100101101001011010010110100101 1
+1%
+#170000
+b11011110101011011011111011101111 M
+b1000 L
+b1 K
+0%
+#175000
+0!
+1%
+#180000
+1B
+1@
+0=
+0;
+b10 -
+b100 0
+b100 /
+b11011110101011011011111011101111 (
+b11011110101011011011111011101111 ,
+b11011110101011011011111011101111 7
+b11011110101011011011111011101111 <
+b11011110101011011011111011101111 A
+b11011110101011011011111011101111 F
+b1000 $
+b1000 +
+1)
+1&
+0%
+#185000
+1!
+b10 3
+1%
+#190000
+0B
+0@
+b0 0
+b0 /
+0)
+0&
+0%
+#195000
+0!
+1%
+#200000
+0%
+#205000
+1%
+#210000
+b11011110101011011011111011101111 J
+b1000 I
+0%
+#215000
+1%
+#220000
+1@
+b100 /
+1&
+0%
+#225000
+0@
+b0 /
+b11011110101011011011111011101111 C
+14
+1%
+#230000
+b0 K
+0&
+0%
+#235000
+04
+1!
+b11011110101011011011111011101111 "
+b11011110101011011011111011101111 1
+1%
+#240000
+b11001010111111101011101010111110 M
+b1100 L
+b1 K
+0%
+#245000
+0!
+1%
+#250000
+1G
+1E
+0B
+0@
+b11 -
+b1000 0
+b1000 /
+b11001010111111101011101010111110 (
+b11001010111111101011101010111110 ,
+b11001010111111101011101010111110 7
+b11001010111111101011101010111110 <
+b11001010111111101011101010111110 A
+b11001010111111101011101010111110 F
+b1100 $
+b1100 +
+1)
+1&
+0%
+#255000
+1!
+b11 3
+1%
+#260000
+0G
+0E
+b0 0
+b0 /
+0)
+0&
+0%
+#265000
+0!
+1%
+#270000
+0%
+#275000
+1%
+#280000
+b11001010111111101011101010111110 J
+b1100 I
+0%
+#285000
+1%
+#290000
+1E
+b1000 /
+1&
+0%
+#295000
+0E
+b0 /
+b11001010111111101011101010111110 H
+14
+1%
+#300000
+b0 K
+0&
+0%
+#305000
+04
+1!
+b11001010111111101011101010111110 "
+b11001010111111101011101010111110 1
+1%
+#310000
+b1 K
+0%
